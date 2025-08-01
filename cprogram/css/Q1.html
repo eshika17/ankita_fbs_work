@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>FirstBit Training And Placement Institute</title>
+    <style>
+        /* 1. Universal Selector */
+         {
+            font-family
+        }
+
+        /* 2. Element Selectors */
+        body {
+            background-color:white;
+            color: gray;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+            background-color: yellow;
+            padding: 20px;
+            border-bottom: 3px solid gainsboro;
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            background-color: white;
+            padding: 10px;
+            margin-left: 15px;
+            border-left: 5px solid green;
+        }
+
+        p {
+            color: gray;
+            line-height: 1.6;
+            margin: 10px 20px;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 40px;
+        }
+
+        hr {
+            margin: 30px 0;
+            height: 2px;
+            background-color: gainsboro;
+            border: none;
+        }
+
+         {
+            color: green;
+            font-weight: bold;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        /* 3. Class Selectors */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .note {
+            color: red;
+            font-style: italic;
+            background-color: white;
+            padding: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: grey;
+            background-color: white;
+            padding: 15px;
+        }
+
+        /* 4. ID Selectors */
+        #mainTitle {
+            font-size: 32px;
+            padding-top: 15px;
+            border-bottom: 2px solid green;
+        }
+
+        #footerNote {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px dashed gray;
+        }
+
+        /* 5. Group Selector */
+        h2, h3, .course {
+            color: green;
+        }
+
+        /* 6. Descendant Selectors */
+        .about-section p {
+            font-size: 18px;
+            background-color: white;
+            padding: 10px;
+            border-left: 4px solid green;
+        }
+
+        .courses-section ul li {
+            background-color: white;
+            padding: 5px 0;
+            border-bottom: 1px solid yellow;
+        }
+
+        #contact p {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="mainTitle">Welcome to FirstBit Solutions</h1>
+
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>We provide training in Java, Python, Web Development and more.</p>
+    </div>
+
+    <div class="courses-section">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li class="course">Java Full Stack</li>
+            <li class="course highlight">Python Full Stack</li>
+            <li class="course">Front-End Development</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h3>Contact Us</h3>
+        <p class="note">Email: contact@firstbitsolutions.com</p>
+        <p>Phone: 9876543210</p>
+        <a href="https://firstbitsolutions.com/">Visit Our Website</a>
+    </div>
+
+    <hr class="divider">
+
+    <p class="footer" id="footerNote">© 2025 FirstBit Solutions</p>
+
+</body>
+</html>
