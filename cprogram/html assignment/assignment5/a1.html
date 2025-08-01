@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Form & Input Attributes</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form
+    action="/submit_form.html"
+    method="post"
+    target="_self"
+    enctype="multipart/form-data"
+    autocomplete="on"
+    novalidate>
+    
+    <label for="username">Username:</label><br>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder="Enter username"
+      value=""
+      required
+      minlength="5"
+      maxlength="15"
+      pattern="[A-Za-z0-9]+"
+      title="Alphanumeric, 5–15 chars"
+      size="20"
+      autofocus><br><br>
+
+    <label for="email">Email:</label><br>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="you@example.com"
+      required
+      autocomplete="email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="at least 8 characters"
+      required
+      minlength="8"
+      autocomplete="new-password"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input
+      type="number"
+      id="age"
+      name="age"
+      placeholder="18–99"
+      min="18"
+      max="99"
+      step="1"><br><br>
+
+    <label for="birthdate">Birth Date:</label><br>
+    <input
+      type="date"
+      id="birthdate"
+      name="birthdate"><br><br>
+
+    <label for="color">Favorite Color:</label><br>
+    <input
+      type="color"
+      id="color"
+      name="color"
+      value="#ff0000"><br><br>
+
+    <label for="website">Website:</label><br>
+    <input
+      type="url"
+      id="website"
+      name="website"
+      placeholder="https://example.com"><br><br>
+
+    <label>Profile Picture:</label><br>
+    <input
+      type="file"
+      id="profile"
+      name="profile_picture"
+      accept="image/*"
+      required><br><br>
+
+    <label for="bio">Short Bio:</label><br>
+    <textarea
+      id="bio"
+      name="bio"
+      placeholder="Tell us a bit about yourself"
+      rows="4"
+      cols="40"></textarea><br><br>
+
+    <input
+      type="hidden"
+      name="referrer"
+      value="newsletter">
+
+    <input
+      type="submit"
+      value="Register">
+
+    <input
+      type="reset"
+      value="Clear">
+  </form>
+</body>
+</html>
+    
