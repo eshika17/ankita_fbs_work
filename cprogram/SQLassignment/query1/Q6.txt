@@ -1,0 +1,18 @@
+mysql> CREATE TABLE emp(
+    ->   emp_id VARCHAR(20),
+    ->   emp_title VARCHAR(100),
+    ->   min_salary INT DEFAULT 8000,
+    ->   max_salary DECIMAL(10,2)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc emp;
++------------+---------------+------+-----+---------+-------+
+| Field      | Type          | Null | Key | Default | Extra |
++------------+---------------+------+-----+---------+-------+
+| emp_id     | varchar(20)   | YES  |     | NULL    |       |
+| emp_title  | varchar(100)  | YES  |     | NULL    |       |
+| min_salary | int           | YES  |     | 8000    |       |
+| max_salary | decimal(10,2) | YES  |     | NULL    |       |
++------------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)

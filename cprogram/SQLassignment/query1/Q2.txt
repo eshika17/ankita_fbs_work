@@ -1,0 +1,18 @@
+mysql> use may2025batch;
+Database changed
+mysql>create table countries(
+    ->country_id CHAR(2) PRIMARY KEY,
+    ->country_name VARCHAR(50),
+    ->region_id INT
+    ->);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> describe countries;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| country_id   | char(2)     | NO   | PRI | NULL    |       |
+| country_name | varchar(50) | YES  |     | NULL    |       |
+| region_id    | int         | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
