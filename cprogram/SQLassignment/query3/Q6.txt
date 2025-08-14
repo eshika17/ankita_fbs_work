@@ -1,0 +1,25 @@
+mysql> update employee
+    -> set email = 'not available'
+    -> where department_id = 80
+    ->   and commission_pct < 0.20;
+Query OK, 4 rows affected (0.01 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> table employee;
++-------------+------------+-----------+---------------+--------------+------------+---------+-----------+----------------+------------+---------------+
+| employee_id | first_name | last_name | email         | phone_number | hire_date  | job_id  | salary    | commission_pct | manager_id | department_id |
++-------------+------------+-----------+---------------+--------------+------------+---------+-----------+----------------+------------+---------------+
+|         100 | Steven     | King      | SKING         | 515.123.4567 | 1987-06-17 | AD_PRES |  24000.00 |           0.00 |        200 |            10 |
+|         101 | neena      | kochhar   | nkochhar      | 515.123.4568 | 1987-06-18 | AD_PRES |  24000.00 |           0.00 |        200 |            10 |
+|         102 | Lex        | De Haan   | LDEHAAN       | 515.123.4569 | 1987-06-19 | AD_VP   |  17000.00 |           0.00 |        200 |            10 |
+|         103 | Alexander  | Hunold    | AHUNOLD       | 590.423.4567 | 1987-06-20 | IT_PROG |   9000.00 |           0.00 |        103 |            60 |
+|         104 | Bruce      | Ernst     | not available | 590.423.4568 | 1987-06-21 | IT_PROG |   6000.00 |           0.00 |        103 |            80 |
+|         105 | David      | Austin    | not available | 590.423.4569 | 1987-06-22 | IT_PROG |   4800.00 |           0.00 |        103 |            80 |
+|         100 | Steven     | King      | SKING         | 515.123.4567 | 1987-06-17 | AD_PRES |  26400.00 |           0.00 |        200 |            10 |
+|         101 | neena      | kochhar   | nkochhar      | 515.123.4568 | 1987-06-18 | AD_PRES |  26400.00 |           0.00 |        200 |            10 |
+|         102 | Lex        | De Haan   | LDEHAAN       | 515.123.4569 | 1987-06-19 | AD_VP   | 187000.00 |           0.00 |        200 |            10 |
+|         103 | Alexander  | Hunold    | AHUNOLD       | 590.423.4567 | 1987-06-20 | IT_PROG |   9900.00 |           0.00 |        103 |            60 |
+|         104 | Bruce      | Ernst     | not available | 590.423.4568 | 1987-06-21 | IT_PROG |   6600.00 |           0.00 |        103 |            80 |
+|         105 | David      | Austin    | not available | 590.423.4569 | 1987-06-22 | IT_PROG |   5280.00 |           0.00 |        103 |            80 |
++-------------+------------+-----------+---------------+--------------+------------+---------+-----------+----------------+------------+---------------+
+12 rows in set (0.00 sec)

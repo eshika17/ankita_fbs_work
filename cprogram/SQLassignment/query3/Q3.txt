@@ -1,0 +1,24 @@
+mysql> insert into department
+    -> value
+    -> (60,'Creative Department',400,1900),
+    -> (70,'Growth Department',500,1500),
+    -> (80,'Marketing Department',400,1400),
+    -> (90,'Innovation Department',600,19000);
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> table department;
++---------------+-----------------------+------------+-------------+
+| department_id | department_name       | manager_id | location_id |
++---------------+-----------------------+------------+-------------+
+|            10 | administration        |        200 |        1700 |
+|            20 | marketing             |        201 |        1800 |
+|            30 | purchasing            |        114 |        1700 |
+|            40 | human resources       |        203 |        2400 |
+|            50 | shipping              |        221 |        1500 |
+|            60 | Creative Department   |        400 |        1900 |
+|            70 | Growth Department     |        500 |        1500 |
+|            80 | Marketing Department  |        400 |        1400 |
+|            90 | Innovation Department |        600 |       19000 |
++---------------+-----------------------+------------+-------------+
+9 rows in set (0.00 sec)

@@ -1,0 +1,33 @@
+mysql> CREATE TABLE jobs (
+    ->   job_id     VARCHAR(20),
+    ->   job_title  VARCHAR(100),
+    ->   min_salary DECIMAL(10,2),
+    ->   max_salary DECIMAL(10,2)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+mysql> insert into jobs
+    -> (job_id, job_title, min_salary, max_salary)
+    -> values
+    -> ('ad_pres','president',20000,40000),
+    -> ('ad_vp','administration vice president',40000,30000),
+    -> ('ad_asst','administration assistant',30000,60000),
+    -> ('ac_mgr','accounting manager',8200,16000),
+    -> ('ac_account','public account',4200,9000),
+    -> ('fi_mgr','finance manager',8200,16000),
+    -> ('fi_account','accountant',4200,9000);
+Query OK, 7 rows affected (0.01 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+mysql> table jobs;
++------------+-------------------------------+------------+------------+
+| job_id     | job_title                     | min_salary | max_salary |
++------------+-------------------------------+------------+------------+
+| ad_pres    | president                     |   20000.00 |   40000.00 |
+| ad_vp      | administration vice president |   40000.00 |   30000.00 |
+| ad_asst    | administration assistant      |   30000.00 |   60000.00 |
+| ac_mgr     | accounting manager            |    8200.00 |   16000.00 |
+| ac_account | public account                |    4200.00 |    9000.00 |
+| fi_mgr     | finance manager               |    8200.00 |   16000.00 |
+| fi_account | accountant                    |    4200.00 |    9000.00 |
++------------+-------------------------------+------------+------------+
+7 rows in set (0.00 sec)

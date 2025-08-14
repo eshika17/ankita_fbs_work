@@ -1,0 +1,41 @@
+mysql> CREATE TABLE department (
+    ->   department_id INT,
+    ->   department_name VARCHAR(50),
+    ->   manager_id INT,
+    ->   location_id INT
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+mysql> insert into department
+    -> (department_id,department_name,manager_id,location_id)
+    -> values
+    -> (10,'administration',200,1700),
+    -> (20,'marketing',201,1800),
+    -> (30,'purchasing',114,1700),
+    -> (40,'human resources',203,2400),
+    -> (50,'shipping',221,1500);
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> table department;
++---------------+-----------------+------------+-------------+
+| department_id | department_name | manager_id | location_id |
++---------------+-----------------+------------+-------------+
+|            10 | administration  |        200 |        1700 |
+|            20 | marketing       |        201 |        1800 |
+|            30 | purchasing      |        114 |        1700 |
+|            40 | human resources |        203 |        2400 |
+|            50 | shipping        |        221 |        1500 |
++---------------+-----------------+------------+-------------+
+5 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
