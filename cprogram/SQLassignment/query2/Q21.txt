@@ -1,0 +1,13 @@
+mysql> RENAME TABLE issue to Lib_Issue;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc lib_issue;
++--------------+------+------+-----+---------+-------+
+| Field        | Type | Null | Key | Default | Extra |
++--------------+------+------+-----+---------+-------+
+| lib_issue_id | int  | YES  |     | NULL    |       |
+| book_no      | int  | YES  |     | NULL    |       |
+| member_id    | int  | YES  |     | NULL    |       |
+| issue_date   | date | YES  |     | NULL    |       |
++--------------+------+------+-----+---------+-------+
+4 rows in set (0.00 sec)

@@ -1,0 +1,18 @@
+
+ INSERT INTO Member
+
+    -> (member_ID, Member_Name, Member_Address, Acc_Open_Date, Membership_type, Fees_Paid, Max_Books_Allowed, penalty_amount)
+    -> VALUES
+    ->   (1, 'Richa Sharma', 'Pune', '2005-12-10', 'Lifetime', 25000, 5, NULL),
+    ->   (2, 'Garima Sen', 'Pune', CURDATE(), 'Annual', 1000, 3, NULL);
+Query OK, 2 rows affected (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from member;
++-----------+-------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+| Member_Id | Member_Name | Member_address | Acc_Open_Date | Membership_type | Fees_paid | Max_Books_Allowed | Penalty_Amount |
++-----------+-------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+|         1 | Rica Sharma | Pune           | 2005-12-10    | Lifetime        |     25000 |                 5 |          50.00 |
+|         2 | Garima Sen  | Pune           | 2025-08-08    | Annual          |      1000 |                 3 |          30.00 |
++-----------+-------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+2 rows in set (0.00 sec)

@@ -1,0 +1,18 @@
+mysql> desc issue;
++--------------+----------+------+-----+---------+-------+
+| Field        | Type     | Null | Key | Default | Extra |
++--------------+----------+------+-----+---------+-------+
+| Lib_Issue_Id | int      | YES  |     | NULL    |       |
+| Book_No      | int      | YES  |     | NULL    |       |
+| Member_Id    | int      | YES  |     | NULL    |       |
+| Issue_Date   | date     | YES  |     | NULL    |       |
+| Return_date  | date     | YES  |     | NULL    |       |
+| reference    | char(30) | YES  |     | NULL    |       |
++--------------+----------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+mysql> alter table issue
+    -> drop reference;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql>

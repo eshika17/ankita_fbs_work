@@ -1,0 +1,32 @@
+mysql> alter table mem
+    -> add constraint chk_membership_type
+    -> CHECK (Membership_type IN ('Lifetime', 'Annual', 'Half Yearly', 'Quarterly'));
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc mem;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| Member_Id         | int          | NO   | PRI | NULL    |       |
+| Member_Name       | varchar(30)  | YES  |     | NULL    |       |
+| Member_address    | varchar(50)  | YES  |     | NULL    |       |
+| Acc_Open_Date     | date         | YES  |     | NULL    |       |
+| Membership_type   | varchar(20)  | YES  |     | NULL    |       |
+| Fees_paid         | int          | YES  |     | NULL    |       |
+| Max_Books_Allowed | int          | YES  |     | NULL    |       |
+| Penalty_Amount    | decimal(7,2) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec) 
+
+CREATE TABLE `mem` (
+  `Member_Id` int NOT NULL,
+  `Member_Name` varchar(30) DEFAULT NULL,
+  `Member_address` varchar(50) DEFAULT NULL,
+  `Acc_Open_Date` date DEFAULT NULL,
+  `Membership_type` varchar(20) DEFAULT NULL,
+  `Fees_paid` int DEFAULT NULL,
+  `Max_Books_Allowed` int DEFAULT NULL,
+  `Penalty_Amount` decimal(7,2) DEFAULT NULL,
+  PRIMARY KEY (`Member_Id`),
+  CONSTRAINT `chk_membership_type` CHECK ((`Membership_type` in (_utf8mb4'Lifetime',_utf8mb4'Annual',_utf8mb4'Half Yearly',_utf8mb4'Quarterly')))

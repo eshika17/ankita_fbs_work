@@ -1,0 +1,23 @@
+mysql>  insert into bookb(Book_No, Book_Name, Author, Cost, Category)
+    -> values
+    ->   (101, 'let us c', 'denis ritchie loni', 450, 'system'),
+    ->   (102, 'oracle complete ref', 'loni', 550, 'database'),
+    ->   (103, 'mastering sql', 'loni', 250, 'database'),
+    ->   (104, 'pl sql-ref', 'scott urman', 750, 'database'),
+    ->   (105, 'Advanced C Programming', 'Brian Kernighan', 600, 'System'),
+    ->   (106, 'Learning MySQL', 'S. Russell, A. Tenny', 300, 'Database');
+Query OK, 6 rows affected (0.01 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> table bookb;
++---------+------------------------+----------------------+------+----------+
+| Book_No | Book_Name              | Author               | Cost | Category |
++---------+------------------------+----------------------+------+----------+
+|     101 | let us c               | denis ritchie loni   |  450 | system   |
+|     102 | oracle complete ref    | loni                 |  550 | database |
+|     103 | mastering sql          | loni                 |  250 | database |
+|     104 | pl sql-ref             | scott urman          |  750 | database |
+|     105 | Advanced C Programming | Brian Kernighan      |  600 | System   |
+|     106 | Learning MySQL         | S. Russell, A. Tenny |  300 | Database |
++---------+------------------------+----------------------+------+----------+
+6 rows in set (0.00 sec)

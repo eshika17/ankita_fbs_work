@@ -1,0 +1,29 @@
+mysql> create table booksa(
+    ->   Book_No INT,
+    ->   Book_Name VARCHAR(255),
+    ->   Author VARCHAR(255),
+    ->   Cost INT,
+    ->   Category VARCHAR(100)
+    ->
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> INSERT INTO booksa(Book_No, Book_Name, Author, Cost, Category)
+    -> VALUES
+    ->   (101, 'let us c', 'denis ritchie loni', 450, 'system'),
+    ->   (102, 'oracle complete ref', 'loni', 550, 'database'),
+    ->   (103, 'mastering sql', 'loni', 250, 'database'),
+    ->   (104, 'pl sql-ref', 'scott urman', 750, 'database');
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> table booksa;
++---------+---------------------+--------------------+------+----------+
+| Book_No | Book_Name           | Author             | Cost | Category |
++---------+---------------------+--------------------+------+----------+
+|     101 | let us c            | denis ritchie loni |  450 | system   |
+|     102 | oracle complete ref | loni               |  550 | database |
+|     103 | mastering sql       | loni               |  250 | database |
+|     104 | pl sql-ref          | scott urman        |  750 | database |
++---------+---------------------+--------------------+------+----------+
+4 rows in set (0.00 sec)

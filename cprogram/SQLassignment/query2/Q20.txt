@@ -1,0 +1,16 @@
+mysql> insert into book
+    -> value
+    -> (105, 'National Geographic',' Adis Scott', 1000, 'Science');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> table book;
++---------+-----------------------+---------------+---------+----------+
+| Book_No | Book_Name             | Author_name   | Cost    | Category |
++---------+-----------------------+---------------+---------+----------+
+|     101 | Let us C              | Denis Ritchie |  450.00 | System   |
+|     102 | Oracle - Complete Ref | Loni          |  550.00 | Database |
+|     103 | Mastering SQL         | Loni          |  250.00 | Database |
+|     104 | PL SQL-Ref            | Scott Urman   |  750.00 | Database |
+|     105 | National Geographic   |  Adis Scott   | 1000.00 | Science  |
++---------+-----------------------+---------------+---------+----------+
+5 rows in set (0.00 sec)

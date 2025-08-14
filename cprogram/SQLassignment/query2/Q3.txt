@@ -1,0 +1,29 @@
+mysql> CREATE TABLE M(
+    ->  Member_Id INTEGER,
+    ->   Member_Name VARCHAR(30),
+    ->   Member_address VARCHAR(50),
+    ->   Acc_Open_Date DATE,
+    ->   Membership_type VARCHAR(20),
+    ->   Fees_paid INTEGER,
+    ->   Max_Books_Allowed INTEGER,
+    ->   Penalty_Amount DECIMAL(7,2)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc m;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| Member_Id         | int          | YES  |     | NULL    |       |
+| Member_Name       | varchar(30)  | YES  |     | NULL    |       |
+| Member_address    | varchar(50)  | YES  |     | NULL    |       |
+| Acc_Open_Date     | date         | YES  |     | NULL    |       |
+| Membership_type   | varchar(20)  | YES  |     | NULL    |       |
+| Fees_paid         | int          | YES  |     | NULL    |       |
+| Max_Books_Allowed | int          | YES  |     | NULL    |       |
+| Penalty_Amount    | decimal(7,2) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> drop table m;
+Query OK, 0 rows affected (0.02 sec)

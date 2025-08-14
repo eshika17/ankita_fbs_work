@@ -1,0 +1,14 @@
+mysql> desc bs;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| Book_No     | int          | YES  |     | NULL    |       |
+| Book_Name   | varchar(30)  | YES  |     | NULL    |       |
+| Author_name | varchar(30)  | YES  |     | NULL    |       |
+| Cost        | decimal(7,2) | YES  |     | NULL    |       |
+| Category    | char(10)     | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> drop table bs;
+Query OK, 0 rows affected (0.01 sec)
