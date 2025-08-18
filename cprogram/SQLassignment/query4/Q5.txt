@@ -1,0 +1,23 @@
+
+mysql> SELECT
+    -> employee_id,
+    -> first_name,last_name,salary
+    -> FROM employee
+    -> ORDER BY salary ASC;
++-------------+------------+-----------+-----------+
+| employee_id | first_name | last_name | salary    |
++-------------+------------+-----------+-----------+
+|         105 | David      | Austin    |   4800.00 |
+|         105 | David      | Austin    |   5280.00 |
+|         104 | Bruce      | Ernst     |   6000.00 |
+|         104 | Bruce      | Ernst     |   6600.00 |
+|         103 | Alexander  | Hunold    |   9000.00 |
+|         103 | Alexander  | Hunold    |   9900.00 |
+|         102 | Lex        | De Haan   |  17000.00 |
+|         100 | Steven     | King      |  24000.00 |
+|         101 | neena      | kochhar   |  24000.00 |
+|         100 | Steven     | King      |  26400.00 |
+|         101 | neena      | kochhar   |  26400.00 |
+|         102 | Lex        | De Haan   | 187000.00 |
++-------------+------------+-----------+-----------+
+12 rows in set (0.00 sec)

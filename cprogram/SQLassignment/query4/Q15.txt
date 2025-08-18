@@ -1,0 +1,21 @@
+ERROR 1054 (42S22): Unknown column 'here_date' in 'field list'
+mysql> select first_name,last_name,hire_date
+    -> from employee
+    -> where year(hire_date)=1987;
++------------+-----------+------------+
+| first_name | last_name | hire_date  |
++------------+-----------+------------+
+| Steven     | King      | 1987-06-17 |
+| neena      | kochhar   | 1987-06-18 |
+| Lex        | De Haan   | 1987-06-19 |
+| Alexander  | Hunold    | 1987-06-20 |
+| Bruce      | Ernst     | 1987-06-21 |
+| David      | Austin    | 1987-06-22 |
+| Steven     | King      | 1987-06-17 |
+| neena      | kochhar   | 1987-06-18 |
+| Lex        | De Haan   | 1987-06-19 |
+| Alexander  | Hunold    | 1987-06-20 |
+| Bruce      | Ernst     | 1987-06-21 |
+| David      | Austin    | 1987-06-22 |
++------------+-----------+------------+
+12 rows in set (0.00 sec)

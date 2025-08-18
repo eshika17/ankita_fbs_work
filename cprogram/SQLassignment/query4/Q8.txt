@@ -1,0 +1,12 @@
+mysql> select
+    ->avg(salary) AS average_salary,
+    ->count(*) AS total_employees
+    ->from employee;
++----------------+-----------------+
+| average_salary | total_employees |
++----------------+-----------------+
+|   28865.000000 |              12 |
++----------------+-----------------+
+1 row in set (0.00 sec)
+
+mysql>

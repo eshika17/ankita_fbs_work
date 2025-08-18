@@ -1,0 +1,14 @@
+mysql> SELECT DISTINCT first_name
+    -> FROM employee
+    -> ORDER BY first_name DESC;
++------------+
+| first_name |
++------------+
+| Steven     |
+| neena      |
+| Lex        |
+| David      |
+| Bruce      |
+| Alexander  |
++------------+
+6 rows in set (0.00 sec)

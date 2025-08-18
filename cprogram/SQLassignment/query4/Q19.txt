@@ -1,0 +1,11 @@
+
+mysql> select last_name
+    -> from employee
+    -> where last_name like "e%";
++-----------+
+| last_name |
++-----------+
+| Ernst     |
+| Ernst     |
++-----------+
+2 rows in set (0.00 sec)mysql> 

@@ -1,0 +1,21 @@
+mysql> select
+    ->first_name,last_name,salary
+    -> FROM employee
+    -> where salary not between 10000 and 15000;
++------------+-----------+-----------+
+| first_name | last_name | salary    |
++------------+-----------+-----------+
+| Steven     | King      |  24000.00 |
+| neena      | kochhar   |  24000.00 |
+| Lex        | De Haan   |  17000.00 |
+| Alexander  | Hunold    |   9000.00 |
+| Bruce      | Ernst     |   6000.00 |
+| David      | Austin    |   4800.00 |
+| Steven     | King      |  26400.00 |
+| neena      | kochhar   |  26400.00 |
+| Lex        | De Haan   | 187000.00 |
+| Alexander  | Hunold    |   9900.00 |
+| Bruce      | Ernst     |   6600.00 |
+| David      | Austin    |   5280.00 |
++------------+-----------+-----------+
+12 rows in set (0.00 sec)

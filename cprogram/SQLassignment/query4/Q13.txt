@@ -1,0 +1,19 @@
+mysql> select first_name,last_name,department_id
+    -> from employee
+    -> where department_id IN (10, 80)
+    -> order by department_id ASC;
++------------+-----------+---------------+
+| first_name | last_name | department_id |
++------------+-----------+---------------+
+| Steven     | King      |            10 |
+| neena      | kochhar   |            10 |
+| Lex        | De Haan   |            10 |
+| Steven     | King      |            10 |
+| neena      | kochhar   |            10 |
+| Lex        | De Haan   |            10 |
+| Bruce      | Ernst     |            80 |
+| David      | Austin    |            80 |
+| Bruce      | Ernst     |            80 |
+| David      | Austin    |            80 |
++------------+-----------+---------------+
+10 rows in set (0.00 sec)

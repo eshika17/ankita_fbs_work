@@ -1,0 +1,12 @@
+
+mysql> select first_name
+    -> from employee
+    -> where first_name like "%b%"
+    -> and first_name like "%c%";
++------------+
+| first_name |
++------------+
+| Bruce      |
+| Bruce      |
++------------+
+2 rows in set (0.00 sec)

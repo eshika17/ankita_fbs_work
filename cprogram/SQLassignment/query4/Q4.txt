@@ -1,0 +1,27 @@
+
+mysql> Select
+    -> first_name,
+    -> last_name,
+    -> salary,
+    -> salary*0.15 AS PF
+    -> FROM
+    -> employee;
++------------+-----------+-----------+------------+
+| first_name | last_name | salary    | PF         |
++------------+-----------+-----------+------------+
+| Steven     | King      |  24000.00 |  3600.0000 |
+| neena      | kochhar   |  24000.00 |  3600.0000 |
+| Lex        | De Haan   |  17000.00 |  2550.0000 |
+| Alexander  | Hunold    |   9000.00 |  1350.0000 |
+| Bruce      | Ernst     |   6000.00 |   900.0000 |
+| David      | Austin    |   4800.00 |   720.0000 |
+| Steven     | King      |  26400.00 |  3960.0000 |
+| neena      | kochhar   |  26400.00 |  3960.0000 |
+| Lex        | De Haan   | 187000.00 | 28050.0000 |
+| Alexander  | Hunold    |   9900.00 |  1485.0000 |
+| Bruce      | Ernst     |   6600.00 |   990.0000 |
+| David      | Austin    |   5280.00 |   792.0000 |
++------------+-----------+-----------+------------+
+12 rows in set (0.00 sec)
+
+mysql>

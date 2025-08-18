@@ -1,0 +1,12 @@
+select distinct job_id
+    -> from employee;
++---------+
+| job_id  |
++---------+
+| AD_PRES |
+| AD_VP   |
+| IT_PROG |
++---------+
+3 rows in set (0.00 sec)
+
+mysql>

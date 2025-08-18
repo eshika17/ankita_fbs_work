@@ -1,0 +1,12 @@
+mysql> select last_name
+    -> fromemployee
+    ->where length(last_name) = 6;
++-----------+
+| last_name |
++-----------+
+| Hunold    |
+| Austin    |
+| Hunold    |
+| Austin    |
++-----------+
+4 rows in set (0.00 sec)
