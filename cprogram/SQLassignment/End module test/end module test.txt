@@ -1,4 +1,4 @@
-seat A
+set A
 
 1. Write an SQL query to retrieve all employees' names and salaries from a table named 
 `Employees`, ordered by salary in descending order.
@@ -156,6 +156,7 @@ You have two tables:
 
 Write an SQL query to find the total number of books sold by each author. Only include authors 
 who have sold more than 100 books.
+
 
 
 
